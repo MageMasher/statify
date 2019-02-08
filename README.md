@@ -2,6 +2,20 @@
 
 When data(fy) is not enough, we must Statify!!
 
+## Installation
+
+Add Statify as a [git dep](https://clojure.org/guides/deps_and_cli#_using_git_libraries) in your clojure deps edn file.
+```clojure
+
+{:paths ["resources" "src"]
+ :deps {org.clojure/clojure {:mvn/version "RELEASE"}}
+ :aliases {
+ 
+    :statify
+    {:extra-deps {MageMasher/statify {:git/url "https://github.com/MageMasher/statify.git" :sha "007a9bcf7b9b35080966f48957f6bd550ba7facc"}}}
+}}
+```
+
 ## Usage
 
 Meant for usage inside [REBL](https://github.com/cognitect-labs/REBL-distro), although not required.
